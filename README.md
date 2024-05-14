@@ -147,6 +147,17 @@ Not: Eşitlenene Kadar bekliyoruz.
 Kontrol Etmek için initia Scanı kullanabilirsiniz.
 https://scan.initia.tech/initiation-1
 
+# Cüzdan Oluşturuyoruz.
+
+Kodu Yazdıktan Sonra şifre soracak 2 kere aynı şifreyi girin ve 24 Kelimenizi Kaydedin.
+
+```
+initiad keys add $WALLET_NAME
+```
+
+Daha Sonra Cüzdanınıza Faucet alın Faucet Linki:
+https://faucet.testnet.initia.xyz/
+
 
 
 
