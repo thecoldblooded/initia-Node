@@ -3,9 +3,9 @@
 | Bileşenler | Minimum Gereksinimler | 
 | ------------ | ------------ |
 | Ubuntu 20.04.2 |
-| CPU |	2 |
-| RAM	| 4 GB |
-| Storage	| 100 GB SSD |
+| CPU |	4 |
+| RAM	| 6 GB |
+| Storage	| 180 GB SSD |
 
 # Sunucumuzu Güncelliyoruz.
 
@@ -157,6 +157,28 @@ initiad keys add $WALLET_NAME
 
 Daha Sonra Cüzdanınıza Faucet alın Faucet Linki:
 https://faucet.testnet.initia.xyz/
+
+Validator Oluşturma Komutu,
+
+```
+initiad tx checkpointing create-validator \
+--amount=1000000000000uinit \
+--pubkey=$(initiad tendermint show-validator) \
+--moniker="Nodeisminiz" \
+--chain-id=initiation-1 \
+--commission-rate="0.10" \
+--commission-max-rate="0.20" \
+--commission-max-change-rate="0.1" \
+--min-self-delegation="1" \
+--fees=500000uinit \
+--gas=200000 \
+--from=Cüzdanismi \
+--website="websiteBilginiz" \
+--details="Detayları Yazın " \
+--identity="Keybaseİdiniz" \
+-y
+```
+
 
 
 
