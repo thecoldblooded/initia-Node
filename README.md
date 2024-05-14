@@ -5,7 +5,7 @@
 | Ubuntu 20.04.2 |
 | CPU |	4 |
 | RAM	| 6 GB |
-| Storage	| 180 GB SSD |
+| Storage	| 350 GB SSD |
 
 # Sunucumuzu Güncelliyoruz.
 
