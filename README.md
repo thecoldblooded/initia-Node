@@ -126,6 +126,10 @@ sudo systemctl enable initiad
 ```
 
 ```
+sudo systemctl restart initiad
+```
+
+```
 sudo systemctl start initiad
 ```
 
