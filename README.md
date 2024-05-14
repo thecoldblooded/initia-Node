@@ -95,13 +95,6 @@ Minimum Gas Priceyi Ayarlıyoruz.
 sed -i -e "s/^minimum-gas-prices *=.*/minimum-gas-prices = \"0.15uinit,0.01uusdc\"/" $HOME/.initia/config/app.toml
 ```
 
-Snapshotta varmışşş :D
-
-```
-initiad tendermint unsafe-reset-all --home $HOME/.initia
-curl -o - -L http://37.120.189.81/initia_testnet/initia_snap.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.initia
-```
-
 Service Dosyamızı Oluşturuyoruz.
 
 ```
@@ -147,6 +140,14 @@ Log görüntülemek için.
 ```
 sudo journalctl -u initiad -f -o cat
 ```
+
+Snapshotta varmışşş :D restart atıp log komutunu girin.
+
+```
+initiad tendermint unsafe-reset-all --home $HOME/.initia
+curl -o - -L http://37.120.189.81/initia_testnet/initia_snap.tar.lz4 | lz4 -c -d - | tar -x -C $HOME/.initia
+```
+
 
 
 # Validator Kuracağız
